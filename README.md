@@ -109,9 +109,9 @@ This project is licensed under the MIT License.
 
 This game was built with accessibility in mind:
 
-- 🧠 **Dyslexia-friendly:** Uses a clean sans-serif font (Poppins) and avoids dense or confusing layouts.
-- ⌨️ **Keyboard accessible:** All interactive elements (e.g., buttons) can be navigated using the `Tab` key and activated with `Enter` or `Space`.
-- 🌈 **Colorblind-friendly:** Game uses both color and **distinct animations/sounds** to indicate feedback, so color is **not the only cue**.
+- **Dyslexia-friendly:** Uses a clean sans-serif font (Poppins) and avoids dense or confusing layouts.
+- **Keyboard accessible:** All interactive elements (e.g., buttons) can be navigated using the `Tab` key and activated with `Enter` or `Space`.
+- **Colorblind-friendly:** Game uses both color and **distinct animations/sounds** to indicate feedback, so color is **not the only cue**.
 
 > Accessibility compliance is based on basic WCAG 2.1 guidelines.
 
