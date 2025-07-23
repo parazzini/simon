@@ -55,15 +55,15 @@ This game is installable on most modern browsers:
 
 ## 📁 Project Structure
 
-├── index.html - Home page
-├── win.html - Victory screen
-├── lose.html - Game over screen
-├── principale.html - Main game page
-├── script.js 
-├── style.css 
-├── manifest.json - Web App Manifest
-├── service-worker.js - Service worker for PWA
-├── immagini/ - Images
+├── index.html - Home page</br>
+├── win.html - Victory screen</br>
+├── lose.html - Game over </br>
+├── principale.html - Main game page</br>
+├── script.js</br>
+├── style.css </br>
+├── manifest.json - Web App Manifest</br>
+├── service-worker.js - Service worker for PWA</br>
+├── immagini/ - Images</br>
 
 ---
 
