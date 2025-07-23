@@ -28,5 +28,5 @@ As a PWA, you can install this Simon Game directly to your device:
 To run locally:
 
 ```bash
-git clone https://github.com/yourusername/simon-game.git
-cd simon-game
+git clone https://github.com/parazzini/simon
+cd simon
