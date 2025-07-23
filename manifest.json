@@ -1,0 +1,17 @@
+{
+  "name": "Gioco Simon",
+  "short_name": "Simon",
+  "id": "simon",
+  "description": "Semplice applicazione che simula il gioco del Simon con una grafica semplice e divertente.",
+  "icons": [
+    {
+      "src": "immagini/simon.png", 
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any" 
+    }
+  ],
+  "start_url": "index.html",
+  "scope": "/",
+  "display": "standalone"
+}

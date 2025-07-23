@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Simon</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="immagini/simon.ico" type="image/x-icon" />
+  <link rel="manifest" href="manifest.json"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button class="settings-btn" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="immagini/imp.png"></button>
+    </div>
+    <div class="punti">
+      <span class="cerchio" id="c1"></span>
+      <span class="cerchio" id="c2"></span>
+      <span class="cerchio" id="c3"></span>
+      <span class="cerchio" id="c4"></span>
+      <span class="cerchio" id="c5"></span>
+      <span class="cerchio" id="c6"></span>
+      <span class="cerchio" id="c7"></span>
+      <span class="cerchio" id="c8"></span>
+    </div>
+    <p id="punteggio">0/8</p>
+    <h1>🎮 SIMON GAME</h1>
+    <p>Riesci a memorizzare la sequenza?<br/>Metti alla prova la tua memoria e sfida i tuoi riflessi!</p>
+    <div id="contenitore"></div>
+    <div class="griglia" id="griglia" style="grid-template-columns: repeat(2, 100px);">
+        <button id="p1" class="pulsante" onclick="isMomentoDiCliccare('p1')"></button>
+        <button id="p2" class="pulsante" onclick="isMomentoDiCliccare('p2')"></button>
+        <button id="p3" class="pulsante" onclick="isMomentoDiCliccare('p3')"></button>
+        <button id="p4" class="pulsante" onclick="isMomentoDiCliccare('p4')"></button>
+    </div>
+    <button id="back-btn" class="start-btn hidden" onclick="Termina()">Termina</button>  
+    <button id="start-btn" class="start-btn" onclick="Inizia()">Inizia</button>
+    
+  <div id="schermata-finale" class="schermata-nascosta">
+  <div class="contenuto-finale">
+    <h2 id="titolo-finale">Titolo</h2>
+    <p id="messaggio-finale">Messaggio</p>
+    <button onclick="location.reload()">Riprova</button>
+  </div>
+</div>
+<div id="light" class="white_content">
+      <div class="settings-grid">
+        <div class="settings-group">
+          <h3>Griglia</h3>
+          <button id="bDue" class="grid-btn" onclick="Crea2()">2x2</button>
+          <button id="bTre" class="grid-btn" onclick="Crea3()">3x3</button>
+          <button id="bQuattro" class="grid-btn" onclick="Crea4()">4x4</button>
+        </div>
+        <div class="settings-group">
+          <h3>Difficoltà</h3>
+          <button id="dFacile" class="difficulty-btn" onclick="DFacile()">Facile (8)</button>
+          <button id="dMedia" class="difficulty-btn" onclick="DMedia()">Media (14)</button>
+          <button id="dDifficile" class="difficulty-btn" onclick="DDifficile()">Difficile (20)</button>
+        </div>
+      </div>
+      <div class="settings-footer">
+        <button id="tutorial" class="start-btn" onclick="window.location.href='home.html'">Tutorial</button>
+        <button id="homepage" class="home-btn" onclick="window.location.href='index.html'" style="background:none; border:none; cursor:pointer; margin-bottom:15px;"><img src="immagini/home-page.png" style="width:30px; height:30px;"></button>
+        <button class="start-btn" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Chiudi</button>
+      </div>
+    </div>
+    <div id="fade" class="black_overlay"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
